@@ -3,9 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --color_Primary:  #2b3946;
+    --color_Secondary:  brown;
+}
 body{
     width: 100%;
-    background-color: #2b3946;
+    height: 100vw;
+    background-color: var(--color_Primary);
     font-family: 'Josefin Sans', sans-serif;
 }
 #container{
@@ -19,13 +24,17 @@ body{
 }
 .conteudo{
     height: 50vh;
-    background: brown;
+    background: var(--color_Secondary);
     border-radius: 5px;
     box-shadow: 15px 20px 10px rgba( 0, 0, 0, 0.7);
 }
+.tamanhoportf{
+    height: 60vh;
+}
 #cabecalho{
+    
     width: 85%;
-    background: brown;
+    background: var(--color_Secondary);
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -39,7 +48,11 @@ nav #barra li{
     display: inline-block;
 
 }
-#barra li{
+nav #barra li a{
+    text-decoration: none;
+    color: black;
+}
+#barra li a{
    padding: 0 6px;
    font-size: 26px;
    text-transform: capitalize;
@@ -61,7 +74,7 @@ nav #barra li{
     height: 30vh;
     transform: rotate(45deg);
     box-shadow: 10px 7px 6px rgba( 0, 0, 0, 0.7);
-    background-image: url(/assets/image/IMG_20200111_225141.jpg);
+    background-image: url("../image/IMG_20200111_225141.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -93,4 +106,144 @@ h2{
 .btn:hover{
     cursor: pointer;
     transform: translateX(25px);
+}
+.imgStudent{
+    width: 100%;
+    height: 100%;
+    background-image: url("../image/fabio-lucas-IWngN5UWUbU-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.txtAboutme{
+    width: 90%;
+    margin: auto;
+    font-size: 1.2rem;
+}
+.progress{
+    width: 40%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.selecionadores{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    box-shadow: -10px 15px 6px rgba( 0, 0, 0, 0.7);
+    background: var(--color_Primary);
+   
+}
+.ativo ,.selecionadores:hover{
+    cursor: pointer;
+    background-color: cornsilk;
+}
+.bar{
+    width: 5px;
+    height: 50px;
+    background-color:  #575555;
+    box-shadow: -10px 15px 6px rgba( 0, 0, 0, 0.7);
+
+}
+.portf{
+    width: 60%;
+    height: 98%;
+    text-align: center;
+}
+#tituloportf{
+    font: bold;
+    font-weight: 600;
+    color: #240123;
+    margin-bottom: 2px;
+}
+#sobreportf{
+    font-size: 1.2rem;
+   margin-bottom: 10px;
+}
+#imgportf{
+    width: 90%;
+    height: 70%;
+    border: 3px solid snow;
+    border-radius: 1px;
+    overflow: hidden;
+    box-shadow: -15px 15px 6px rgba( 0, 0, 0, 0.7);
+}
+.contact{
+    display: grid;
+    grid-template: auto / auto auto;
+    text-align: center;
+    width: 100%;
+    height: 70vh;
+
+}
+.boxMsg{
+    width: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid;
+}
+#opcoesContato{
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    
+    
+    
+}
+.tituloContato{
+    margin-top: 20px;
+}
+.sobreContato{
+    width: 85%;
+    margin: auto;
+}
+.opcoes{
+    width: 40%;
+    background: var(--color_Primary);
+    margin: 0 5px 10px 5px;
+    border-radius: 10px;
+    color: var(--color_Secondary);
+    font-size: 1.2rem;
+    
+    
+}
+.formulario{
+    background: var(--color_Primary);
+   
+
+}
+.formul{
+    margin-bottom: 20px;
+    padding: 8px;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    background-color: var(--color_Secondary);
+    color: var(--color_Primary);
+    font-size: 18px;
+}
+.enviar{
+    width: 40%;
+    padding: 5px 0;
+    font-size: 1.1rem;
+    font: bold;
+    font-weight: 600;
+    color: var(--color_Secondary);
+    background: var(--color_Primary);
+    transition: .2s ease-in;
+}
+.enviar:hover{
+    cursor: pointer;
+    width: 44%;
+}
+.imgContato{
+    margin: 5px 0;
 }

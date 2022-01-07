@@ -15,28 +15,84 @@
         <img id="imgLogo" src="./assets/image/6493189434_e103daca-cb88-4d4f-9451-74327855ef1f.png" alt="logo">
         <nav>
             <ul id="barra">
-                <li>home</li>
-                <li>resume</li>
-                <li>portfolio</li>
-                <li>contact</li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#resume">resume</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
     </header>
     <section id="container">
-        <article class="conteudo a1">
+        <article id="home" class="conteudo a1">
             <div class="sobre revelation">
                 <h2>I AM PROGRAMMER PEAKER</h2>
                 <h1>Web Development</h1>
                 <button class="btn">Contact Me</button>
             </div>
             <div class="sobre aboutImage">
-               
+            
             </div>
         </article>
-        <article class="conteudo"></article>
-        <article class="conteudo"></article>
-        <article class="conteudo"></article>
-        <article class="conteudo"></article>
+        <article class="conteudo a1">
+            <div id="resume" class="aboutMe">
+                <h2>Programador</h2>
+                <h1>Free Lancer</h1>
+                <p class="txtAboutme">No momento estou estudando front end e back end e algumas ferramentas que inpusiona o desenvolvimento de sites de alguma maneira como Bootstrap, JQuery e React.
+                <br>
+                Além de todas essa coisas faço faculdade de ánalise e desenvolvimento de sistemas.
+                </p>
+                
+            </div>
+            <div class="imgStudent">
+
+            </div>
+        </article>
+        <article  id="portfolio" class="conteudo a1 tamanhoportf">
+            <div class="progress">
+                <div class="selecionadores ativo" onclick="firstProject()"></div>
+                <div class="bar barFirst"></div>
+                <div class="selecionadores"  onclick="secondProject()"></div>
+                <div class="bar barSecond"></div>
+                <div class="selecionadores"  onclick="thirdProject()"></div>
+            </div>
+            <div class="portf">
+                <h2 id="tituloportf"></h2>
+                <p id="sobreportf"></p>
+                <img id="imgportf" src="" alt="imagem do portfolio">
+            </div>
+        </article>
+        <article id="contact" class="conteudo contact">
+            <div class="contato">
+                <h2 class="tituloContato" id="tituloportf">Como me contatar</h2>
+                <p class="sobreContato" id="sobreportf">Caso se em nenhum desses tipos de contato der certo preencha os campos do formulário e envie um email.</p>
+                <div id="opcoesContato">
+                    <article class="opcoes">
+                        <img class="imgContato" src="./assets/image/if-advantage-nearby-1034361_88844.png" alt="Endereço">
+                        <p>Rua: Sua imaginação<p>
+                        <p>Número: 999</p>
+                        <p>Bairro: Nova Alegria</p>
+                        <p>Cidade: Morro dos Sonhos</p>
+                    </article>
+                    <article class="opcoes">
+                        <img class="imgContato" src="./assets/image/mobile_phone_14388.png" alt="Telefone">
+                        <p>(00) 0 0000-0000</p>
+                    </article>
+                    <article class="opcoes">
+                        <img class="imgContato" src="./assets/image/email_14410.png" alt="Email">
+                        <p>Imaginario@hotmail.com</p>
+                    </article>
+                </div>
+            </div>
+            <div class="boxMsg">
+                <h2>Envie Sua Mensagem</h2>
+               <input class="formul" type="text" placeholder="Seu Nome">
+               <input class="formul" type="email" placeholder="Seu Email">
+               <input class="formul" type="text" placeholder="Breve Mensagem">
+               <input class="enviar" type="submit" value="Enviar">
+            </div>
+        </article>
+        <br>
     </section>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
