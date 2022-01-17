@@ -1,0 +1,110 @@
+@media (min-width: 320px) and (max-width: 744px){
+    /* Header */
+    #cabecalho{
+        display: block;
+        
+    }
+    #imgLogo{
+        width: 35vh;
+        
+    }
+  
+    nav #barra li{
+        display: block;
+       text-align: center;
+    }
+    /* Primeiro bloco */
+    #container{
+        display: block;
+    }
+    article{
+        margin: 15px 0;
+    }
+    .a1{
+        height: 400px;
+    }
+    .sobre{
+        margin: auto;
+    }
+    #home{
+        display: block;
+        
+    }
+    #home .revelation{
+        margin: 5px 5px 5px 5px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    .btn{
+        margin-left: 10px;
+    }
+    .aboutImage{
+        margin-top: 50px;
+        width: 25vh;
+        height: 25vh;
+        transform: rotate(90deg);
+        box-shadow: 10px 7px 6px rgba( 0, 0, 0, 0.7);
+    }
+    /* Segundo bloco */
+    #resume h1, h2{
+        margin: 5px 0;
+    }
+    .bloco2{
+        display: block;
+        height: 800px;
+        margin-bottom: 15px;
+    }
+    .imgStudent{
+        margin-top: 8px;
+        overflow: hidden;
+        height: 50%;
+    }
+    /* terceiro bloco */
+    .tamanhoportf{
+        height: 700px;
+        display: block;
+    }
+    .progress{
+        width: 40%;
+        height: 98%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 10%;
+        
+    }
+    .portf{
+        width: 100%;
+    }
+    #imgportf{
+        width: 80%;
+        height: 65%;
+    }
+
+    /* Quarto bloco */
+    #contact{
+        height: 950px;
+        display: flex;
+        flex-direction: column;
+    }
+     #opcoesContato{
+        display: block;
+    }
+    .opcoes{
+        width: 85%;
+        margin: 5px auto;
+    }
+    .boxMsg{
+        font-size: 16px;
+        width: 50%;
+        margin: 5px auto;
+        border: none;
+    }
+    .enviar{
+        width: 55%;
+    }
+}

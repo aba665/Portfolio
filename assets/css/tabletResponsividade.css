@@ -1,0 +1,48 @@
+@media (min-width: 745px) and (max-width: 1000px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+    }
+    #cabecalho{
+        width: 100%;
+    }
+    #container{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    .conteudo{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .boxMsg{
+        width: 100%;
+        margin: auto;
+    }
+    .contato{
+        width: 100%;
+        margin: auto;
+    }
+    #contact{
+        height: 80vh;
+    }
+    .aboutImage{
+        width: 19vh;
+        height: 19vh;
+        overflow: hidden;
+    }
+    .revelation{
+        width: 50%;
+    }
+}
+@media (min-width: 821px) and (max-width: 1000px){
+    .aboutImage{
+        width: 22vh;
+        height: 22vh;
+        overflow: hidden;
+    }
+}
